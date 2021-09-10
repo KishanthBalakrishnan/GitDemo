@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-09T14:53:55.495Z",
+        "line": 3,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-the-order-for-vegatables;search-for-items-and-validate-results",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5001000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user is on Greencart Landing page",
+            "match": {
+              "location": "stepDefinitions.searchSteps.user_is_on_greencart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2027800,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user searched for \"cucumber\" Vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.searchSteps.user_searched_for_Vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2001200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "\"Cucumber\" results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "stepDefinitions.searchSteps.something_results_are_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search and place the order for vegatables",
+    "description": "",
+    "id": "search-and-place-the-order-for-vegatables",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Featrures/search.feature",
+    "tags": []
+  }
+]

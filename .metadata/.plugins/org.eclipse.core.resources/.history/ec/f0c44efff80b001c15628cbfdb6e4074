@@ -1,0 +1,6 @@
+Feature: Search and place the order for vegatables
+@SeleniumTest
+Scenario: Search for items and validate results
+Given user is on Greencart Landing page
+When  user searched for "cucumber" Vegetable
+Then "Cucumber" results are displayed
